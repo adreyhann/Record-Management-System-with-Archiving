@@ -125,22 +125,24 @@
         <div class="main">
             <nav class="navbar navbar-expand-lg px-1 border-bottom">
                 <!-- Button for sidebar toggle -->
-                <button class="btn" type="button" data-bs-theme="light">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <ul class="navbar-nav ml-auto"> <!-- Added this ul element for right-aligned items -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="fa-solid fa-user pe-2"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">View Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="container-fluid">
+                    <button class="btn" type="button" data-bs-theme="light">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav"> <!-- Added this ul element for right-aligned items -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fa-solid fa-user pe-2"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">View Profile</a></li>
+                                <li><a class="dropdown-item" href="#">History Logs</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>            
             <div class="container-lg">
                 <h2 class="mt-2">Dashboard</h2>
