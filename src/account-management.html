@@ -8,7 +8,12 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="main.css" />
-		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+		<script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+		<script defer src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+		<script defer src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+		<script defer src="users-table.js"></script>
 		<title>Accounts</title>
 	</head>
 	<body>
@@ -213,108 +218,102 @@
 					<h2 class="my-1">
 						Account Management > <small style="color: #b8b894">admin</small>
 					</h2>
-                    <div class="container-fluid">
-                        <span class="row justify-content-center fs-4 mt-2">List of all users</span>
-                        <a class="btn btn-success btn-sm mt-3" href="">Add user</a>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-					<table class="table my-3">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Role</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Ryan Montemayor</td>
-                            <td>momtemayor@gmail.com</td>
-                            <td>Admin</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Adrian Melibo</td>
-                            <td>meliboadrian@gmail.com</td>
-                            <td>Class Advisor</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">5</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">6</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">7</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">8</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">9</th>
-                            <td>Carlos Ching</td>
-                            <td>ching@gmail.com</td>
-                            <td>Registrar</td>
-                            <td>
-                                <a class="btn btn-primary btn-sm" href="">Manage</a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="container w-100">
+						<a class="btn btn-success my-2" href="">Add users</a>
+						<table id="example" class="table table-striped" style="width:100%">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Role</th>
+									<th>Email</th>
+									
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ryan Montemayor</td>
+									<td>Admin</td>
+									<td>montemayor@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								<tr>
+									<td>Adrian Melibo</td>
+									<td>Admin</td>
+									<td>meliboadrian@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Carlos Ching</td>
+									<td>Class Advisor</td>
+									<td>ching@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Zean Toledo</td>
+									<td>Class Advisor</td>
+									<td>toledo@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Jhon Jervy Daniel</td>
+									<td>Class Advisor</td>
+									<td>daniel@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>John Alu</td>
+									<td>Admin</td>
+									<td>alu@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Lancelot Lee</td>
+									<td>Class Advisor</td>
+									<td>lee@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Sanji</td>
+									<td>Class Advisor</td>
+									<td>sanji@gmail.com</td>
+									
+									<td>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Name</th>
+									<th>Role</th>
+									<th>Email</th>
+									
+									<th>Action</th>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
