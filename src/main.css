@@ -11861,7 +11861,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000000;
   margin: 0;
-  background: #EEFDFD;
+  background: #f6fafa;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -11976,6 +11976,21 @@ a.sidebar-link {
 .custom-bg-1 {
   background: #FAF0E6;
   border-radius: 20px;
+}
+
+.details-control {
+  cursor: pointer;
+  user-select: none;
+}
+
+.details-control:before {
+  content: "➕"; /* Plus icon */
+  color: blue;
+  font-size: 20px;
+}
+
+tr.details td {
+  padding: 0;
 }
 
 /* Responsive */

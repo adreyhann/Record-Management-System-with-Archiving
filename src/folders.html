@@ -27,6 +27,7 @@
 		></script>
 		<script defer src="users-table.js"></script>
 		<script defer src="upload file.js"></script>
+        <script defer src="create-folders.js"></script>
 		<title>Records</title>
 	</head>
 	<body>
@@ -228,130 +229,31 @@
 					</div>
 				</nav>
 				<div class="container-lg">
-					<h2 class="my-1">
-						Records Management > <small style="color: #b8b894">admin</small>
-					</h2>
-					<div class="container w-100">
-						<a id="addRow" class="btn btn-success my-2">Create new record</a>
-						<table id="example" class="table table-striped hover" style="width: 100%">
-							<thead>
-								<tr>
-									<th></th>
-									<th>Student Name</th>
-									<th>Role</th>
-									<th>Email</th>
-									<th>Action</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="details-control"></td>
-									<td>Ryan Montemayor</td>
-									<td>Admin</td>
-									<td>montemayor@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-
-								<tr>
-									<td class="details-control"></td>
-									<td>Adrian Melibo</td>
-									<td>Admin</td>
-									<td>meliboadrian@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Carlos Ching</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Grade 1</small></td>
-									<td>ching@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Zean Toledo</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Grade 2</small></td>
-									<td>toledo@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Jhon Jervy Daniel</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Grade 3</small></td>
-									<td>daniel@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>John Alu</td>
-									<td>Admin</td>
-									<td>alu@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Lancelot Lee</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Grade 5</small></td>
-									<td>lee@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Sanji</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Grade 4</small></td>
-									<td>sanji@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Nami</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Grade 6</small></td>
-									<td>nami@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="details-control"></td>
-									<td>Sanji</td>
-									<td>Class Advisor <br> <small class="badge text-bg-info ms-3">Kinder</small></td>
-									<td>sanji@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th></th>
-									<th>Account Name</th>
-									<th>Role</th>
-									<th>Email</th>
-									<th>Action</th>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
+					<div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Create/Edit Folder</h2>
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Folder Name" id="folderName">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="saveFolder">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Folder List</h2>
+                                <ul id="folderList" class="list-group">
+                                    <!-- Folder list items will be dynamically added here -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
 
-		
 		<script src="script.js"></script>
 	</body>
 </html>
