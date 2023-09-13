@@ -35,7 +35,8 @@
 // });
 
 $(document).ready(function () {
-	var table = $('#example').DataTable({
+	const table = $('#example').DataTable({
+        'bDestroy': true,
 		columnDefs: [
 			{
 				targets: [0], // Target the first column (plus icon)
