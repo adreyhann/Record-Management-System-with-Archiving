@@ -26,7 +26,8 @@
 			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
 		></script>
 		<script defer src="users-table.js"></script>
-		<title>Accounts</title>
+		<script defer src="upload file.js"></script>
+		<title>Records</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -46,7 +47,7 @@
 						<li class="sidebar-item">
 							<a
 								href="index.html"
-								class="sidebar-link collapsed"
+								class="sidebar-link"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
 								aria-controls="dashboard"
@@ -66,7 +67,7 @@
 								<i class="fa-solid fa-user pe-2"></i>
 								Account Management
 							</a>
-						</li>
+						</li>	
 						<li class="sidebar-item">
 							<a
 								href="records-management.html"
@@ -77,15 +78,27 @@
 								<i class="fa-regular fa-file-lines pe-2"></i>
 								Records Management
 							</a>
+							<ul
+								id="records"
+								class="sidebar-dropdown list-unstyled collapse"
+								data-bs-parent="#sidebar"
+							>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-link">SF9e</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-link">SF10e</a>
+								</li>
+							</ul>
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="archives.html"
+								href="#"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="auth"
 							>
-								<i class="fa-regular fa-user pe-2"></i>
+								<i class="fa-solid fa-archive pe-2"></i>
 								Archives
 							</a>
 						</li>
@@ -149,10 +162,10 @@
 				</nav>
 				<div class="container-lg">
 					<h2 class="my-1">
-						Account Management > <small style="color: #b8b894">admin</small>
+						Archives > <small style="color: #b8b894">admin</small>
 					</h2>
 					<div class="container w-100">
-						<a class="btn btn-success my-2" href="">Add users</a>
+						<a id="addRow" class="btn btn-success my-2">Create new record</a>
 						<table
 							id="example"
 							class="table table-striped hover"
@@ -160,117 +173,112 @@
 						>
 							<thead>
 								<tr>
-									<th>Account Name</th>
-									<th>Role</th>
-									<th>Email</th>
+									<th></th>
+									<th>Student Number</th>
+									<th>Student Name</th>
+									<th>Year</th>
+									<th>Batch</th>
 									<th>Action</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td class="details-control"></td>
+									<td>219971827</td>
 									<td>Ryan Montemayor</td>
-									<td>Admin</td>
-									<td>montemayor@gmail.com</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 
 								<tr>
-									<td>Adrian Melibo</td>
-									<td>Admin</td>
-									<td>meliboadrian@gmail.com</td>
-
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Carlos Ching</td>
-									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Grade 1</small>
-									</td>
-									<td>ching@gmail.com</td>
-
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Zean Toledo</td>
-									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Grade 2</small>
-									</td>
-									<td>toledo@gmail.com</td>
-
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Jhon Jervy Daniel</td>
-									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Grade 3</small>
-									</td>
-									<td>daniel@gmail.com</td>
-
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>John Alu</td>
-									<td>Admin</td>
-									<td>alu@gmail.com</td>
-
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Lancelot Lee</td>
-									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Grade 5</small>
-									</td>
-									<td>lee@gmail.com</td>
-
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Sanji</td>
-									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Grade 4</small>
-									</td>
-									<td>sanji@gmail.com</td>
-									<td>
-										<a class="btn btn-primary btn-sm" href="">Manage</a>
-									</td>
-								</tr>
-								<tr>
-									<td>Nami</td>
-									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Grade 6</small>
-									</td>
-									<td>nami@gmail.com</td>
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
 								</tr>
 								<tr>
-									<td>Sanji</td>
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
-										Class Advisor <br />
-										<small class="badge text-bg-info ms-3">Kinder</small>
+										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
-									<td>sanji@gmail.com</td>
+								</tr>
+								<tr>
+									<td class="details-control"></td>
+									<td>219971827</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
 									</td>
@@ -278,9 +286,11 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<th>Account Name</th>
-									<th>Role</th>
-									<th>Email</th>
+									<th></th>
+									<th>Student Number</th>
+									<th>Student Name</th>
+									<th>Year</th>
+									<th>Batch</th>
 									<th>Action</th>
 								</tr>
 							</tfoot>
