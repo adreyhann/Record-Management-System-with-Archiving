@@ -1,4 +1,3 @@
-// Dummy data for folder list
 let folders = [];
 let selectedFolderIndex = -1; // Track the selected folder for editing
 
@@ -14,7 +13,6 @@ function addFoldersToList() {
     });
 }
 
-// Event handler for folder creation or editing
 $('#saveFolder').on('click', function() {
     let folderName = $('#folderName').val();
     if (folderName.trim() !== '') {
@@ -39,7 +37,7 @@ $('#folderList').on('click', '.edit-folder', function() {
 
 // Event handler for deleting a folder
 $('#folderList').on('click', '.delete-folder', function() {
-    var indexToDelete = $(this).data('index');
+    let indexToDelete = $(this).data('index');
     folders.splice(indexToDelete, 1);
     addFoldersToList();
     selectedFolderIndex = -1; // Reset selected folder index
