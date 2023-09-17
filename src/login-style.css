@@ -31,9 +31,10 @@ body{
     width: 551px;
     height: 412px;
     background-image: url("download.png");
+    background-repeat: no-repeat;
     transform: rotate(0deg);
-    left: -180px;
-    bottom: -2px;
+    left: 32px;
+    bottom: -111px;
     z-index: 1;
     border-radius: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
