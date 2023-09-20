@@ -30,7 +30,7 @@ body{
     content: "";
     width: 551px;
     height: 412px;
-    background-image: url("download.png");
+    background-image: url("img/download.png");
     background-repeat: no-repeat;
     transform: rotate(0deg);
     left: 32px;
