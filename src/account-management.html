@@ -26,6 +26,7 @@
 			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
 		></script>
 		<script defer src="js/users-table.js"></script>
+		<script defer src="js/add-user.js"></script>
 		<title>Accounts</title>
 	</head>
 	<body>
@@ -152,7 +153,13 @@
 						Account Management > <small style="color: #b8b894">admin</small>
 					</h2>
 					<div class="container w-100">
-						<a class="btn btn-success my-2" href="">Add users</a>
+						<a
+							class="btn btn-success my-2"
+							data-bs-toggle="modal"
+							data-bs-target="#reg-modal"
+							href=""
+							>Add users</a
+						>
 						<table
 							id="example"
 							class="table table-striped hover"
@@ -285,6 +292,43 @@
 								</tr>
 							</tfoot>
 						</table>
+					</div>
+					<div
+						class="modal fade"
+						id="reg-modal"
+						tabindex="-1"
+						aria-labelledby="modal-title"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modal-title">Add new user</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+								</div>
+								<div class="modal-body">
+									<label for="modal-username m-0" class="form-label">Enter Account Name</label>
+									<input type="text" class="form-control" id="modal-username" placeholder="adrian" required>
+									<label for="modal-email" class="form-label mt-2">Enter email</label>
+									<input type="email" class="form-control" id="modal-email" placeholder="@example.com" required>
+									<label for="modal-password" class="form-label mt-2">Enter password</label>
+									<input type="password" class="form-control" id="modal-password" placeholder="create strong password" required>
+									<label for="modal-text" class="form-label mt-2">Enter Gender</label>
+									<input type="text" class="form-control" id="modal-text" placeholder="">
+									<input type="text" id="selectedRole" class="form-control mt-2" placeholder="Selected Role" readonly>
+									<button type="button" class="btn btn-info dropdown-toggle mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+										Select Role
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#" data-role="Admin">Admin</a></li>
+										<li><a class="dropdown-item" href="#" data-role="Class Advisor">Class Advisor</a></li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
