@@ -86,7 +86,7 @@
 								aria-expanded="false"
 								aria-controls="auth"
 							>
-								<i class="fa-regular fa-user pe-2"></i>
+								<i class="fa-solid fa-archive pe-2"></i>
 								Archives
 							</a>
 						</li>
@@ -165,10 +165,11 @@
 							class="table table-striped hover"
 							style="width: 100%"
 						>
-							<thead>
+							<thead class="table-info">
 								<tr>
 									<th>Account Name</th>
 									<th>Role</th>
+									<th>Subject Advisory</th>
 									<th>Email</th>
 									<th>Action</th>
 								</tr>
@@ -177,6 +178,7 @@
 								<tr>
 									<td>Ryan Montemayor</td>
 									<td>Admin</td>
+									<td>Math</td>
 									<td>montemayor@gmail.com</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
@@ -186,6 +188,7 @@
 								<tr>
 									<td>Adrian Melibo</td>
 									<td>Admin</td>
+									<td>Science</td>
 									<td>meliboadrian@gmail.com</td>
 
 									<td>
@@ -198,6 +201,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Grade 1</small>
 									</td>
+									<td>Filipino</td>
 									<td>ching@gmail.com</td>
 
 									<td>
@@ -210,6 +214,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Grade 2</small>
 									</td>
+									<td>MAPEH</td>
 									<td>toledo@gmail.com</td>
 
 									<td>
@@ -222,6 +227,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Grade 3</small>
 									</td>
+									<td>AP</td>
 									<td>daniel@gmail.com</td>
 
 									<td>
@@ -231,6 +237,7 @@
 								<tr>
 									<td>John Alu</td>
 									<td>Admin</td>
+									<td>Reading</td>
 									<td>alu@gmail.com</td>
 
 									<td>
@@ -243,6 +250,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Grade 5</small>
 									</td>
+									<td>Language</td>
 									<td>lee@gmail.com</td>
 
 									<td>
@@ -255,6 +263,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Grade 4</small>
 									</td>
+									<td>Math</td>
 									<td>sanji@gmail.com</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
@@ -266,6 +275,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Grade 6</small>
 									</td>
+									<td>Science</td>
 									<td>nami@gmail.com</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
@@ -277,6 +287,7 @@
 										Class Advisor <br />
 										<small class="badge text-bg-info ms-3">Kinder</small>
 									</td>
+									<td>Reading</td>
 									<td>sanji@gmail.com</td>
 									<td>
 										<a class="btn btn-primary btn-sm" href="">Manage</a>
@@ -287,6 +298,7 @@
 								<tr>
 									<th>Account Name</th>
 									<th>Role</th>
+									<th>Subject Advisory</th>
 									<th>Email</th>
 									<th>Action</th>
 								</tr>
@@ -300,33 +312,42 @@
 						aria-labelledby="modal-title"
 						aria-hidden="true"
 					>
-						<div class="modal-dialog">
+						<div class="modal-dialog modal-dialog-scrollable">
 							<div class="modal-content">
 								<div class="modal-header">
 									<h5 class="modal-title" id="modal-title">Add new user</h5>
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 								</div>
 								<div class="modal-body">
-									<label for="modal-username m-0" class="form-label">Enter Account Name</label>
-									<input type="text" class="form-control" id="modal-username" placeholder="adrian" required>
-									<label for="modal-email" class="form-label mt-2">Enter email</label>
-									<input type="email" class="form-control" id="modal-email" placeholder="@example.com" required>
-									<label for="modal-password" class="form-label mt-2">Enter password</label>
-									<input type="password" class="form-control" id="modal-password" placeholder="create strong password" required>
-									<label for="modal-text" class="form-label mt-2">Enter Gender</label>
-									<input type="text" class="form-control" id="modal-text" placeholder="">
-									<label for="modal-text" class="form-label mt-2">Role</label>
-									<input type="text" id="selectedRole" class="form-control" placeholder="Selected Role" readonly>
-									<button type="button" class="btn btn-info dropdown-toggle mt-2" data-bs-toggle="dropdown" aria-expanded="false">
-										Select Role
-									</button>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#" data-role="Admin">Admin</a></li>
-										<li><a class="dropdown-item" href="#" data-role="Class Advisor">Class Advisor</a></li>
-									</ul>
+									<form class="needs-validation" novalidate>
+										<label for="modal-username m-0" class="form-label">Enter Account Name</label>
+										<input type="text" class="form-control" id="modal-username" placeholder="adrian" required>
+										<label for="modal-email" class="form-label mt-2">Enter email</label>
+										<input type="email" class="form-control" id="modal-email" placeholder="@example.com" required>
+										<label for="modal-password" class="form-label mt-2">Enter password</label>
+										<input type="password" class="form-control" id="modal-password" placeholder="*******" required>
+										<label for="modal-text" class="form-label mt-2">Enter Gender</label>
+										<input type="text" class="form-control" id="modal-text" placeholder="">
+										<div class="col md-6">
+											<label for="validationDefault04" class="form-label">Role</label>
+											<select class="form-select" id="validationDefault04" required>
+												<option>Admin</option>
+												<option>Class Advisor <p class="text-info">(kinder)</p></option>
+												<option>Class Advisor <p class="text-info">(Grade 1)</option>
+												<option>Class Advisor <p class="text-info">(Grade 2)</option>
+												<option>Class Advisor <p class="text-info">(Grade 3)</option>
+												<option>Class Advisor <p class="text-info">(Grade 4)</option>
+												<option>Class Advisor <p class="text-info">(Grade 5)</small></option>
+												<option>Class Advisor <p class="text-info">(Grade 6)</option>
+											</select>
+											<div class="invalid-feedback">
+												Please select a valid .
+											</div>
+										</div>
+									</form>
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-success">Save</button>
+									<button type="submit" class="btn btn-success">Save</button>
 								</div>
 							</div>
 						</div>
