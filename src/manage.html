@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/ae360af17e.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Sidebar -->
+			<aside id="sidebar">
+				<div class="h-50">
+					<div class="sidebar-logo">
+						<a href="">
+							<img
+								src="img/[removal.ai]_tmp-649e357422452.png"
+								class="img-thumbnail border-0"
+								alt="BCA"
+							/>
+						</a>
+					</div>
+					<!-- Sidebar Navigation -->
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+							<a
+								href="index.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-solid fa-sliders pe-2"></i>
+								Dashboard
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="account-management.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="users"
+							>
+								<i class="fa-solid fa-user pe-2"></i>
+								Account Management
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="records-management.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="pages"
+							>
+								<i class="fa-regular fa-file-lines pe-2"></i>
+								Records Management
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="archives.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="auth"
+							>
+								<i class="fa-regular fa-user pe-2"></i>
+								Archives
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="calendar.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-regular fa-calendar pe-2"></i>
+								Calendar
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="#"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-regular fa-flag pe-2"></i>
+								Reports
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<!-- Main Component -->
+			<div class="main">
+				<nav class="navbar navbar-expand-lg px-1 border-bottom">
+					<!-- Button for sidebar toggle -->
+					<div class="container-fluid">
+						<button class="btn" type="button" data-bs-theme="light">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<ul class="navbar-nav">
+							<!-- Added this ul element for right-aligned items -->
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<span class="fa-solid fa-user pe-2"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-lg-end">
+									<li><a class="dropdown-item" href="#">View Profile</a></li>
+									<li><a class="dropdown-item" href="#">History Logs</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="login-page.html">Logout</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="container-lg">
+					<h2 class="mt-2">Account Details</h2>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 mt-2 border-end">
+								<h3>About</h3>
+								<ul class="list-group border-0">
+									<li class="list-group-item list-group-item-action active" aria-current="true" border-0">Overview</li>
+									<li class="list-group-item border-0">Places Lives</li>
+									<li class="list-group-item border-0">Contact</li>
+                                    <li class="list-group-item border-0">Settings</li>
+								</ul>
+							</div>
+							<div class="col mt-2">
+                                <h3>Overview</h3>
+								<ul class="list-group border-0">
+									<li class="list-group-item  border-0">
+                                        Last Name:
+                                    </li>
+                                    <li class="list-group-item border-0">First Name: </li>
+                                    <li class="list-group-item border-0">Gender: </li>
+									<li class="list-group-item border-0">Email Address: </li>
+                                    <li class="list-group-item border-0">Password: </li>
+									<li class="list-group-item border-0">Contact Number: </li>
+                                    <li class="list-group-item border-0">Role: </li>
+                                    <li class="list-group-item border-0">Class Advisor: </li>
+                                    <li class="list-group-item border-0">Subject Advisory: </li>
+								</ul>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

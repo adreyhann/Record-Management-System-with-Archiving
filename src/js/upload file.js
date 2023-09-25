@@ -34,34 +34,34 @@
 //     }
 // });
 
-$(document).ready(function () {
-	const table = $('#example').DataTable({
-        'bDestroy': true,
-		columnDefs: [
-			{
-				targets: [0], // Target the first column (plus icon)
-				orderable: false, // Disable sorting for this column
-				className: 'details-control', // Add a class for styling
-			},
-		],
-		order: [[1, 'asc']], // Sort by the second column by default
-	});
+// $(document).ready(function () {
+// 	const table = $('#example').DataTable({
+        
+// 		columnDefs: [
+// 			{
+// 				targets: [0], // Target the first column (plus icon)
+// 				orderable: false, // Disable sorting for this column
+// 				className: 'details-control', // Add a class for styling
+// 			},
+// 		],
+// 		order: [[1, 'asc']], // Sort by the second column by default
+// 	});
 
-	// Handle the click event on the plus icon to toggle the additional data
-	$('#example tbody').on('click', 'td.details-control', function () {
-		var tr = $(this).closest('tr');
-		var row = table.row(tr);
+// 	// Handle the click event on the plus icon to toggle the additional data
+// 	$('#example tbody').on('click', 'td.details-control', function () {
+// 		var tr = $(this).closest('tr');
+// 		var row = table.row(tr);
 
-		if (row.child.isShown()) {
-			// This row is already open; close it
-			row.child.hide();
-			tr.removeClass('shown');
-		} else {
-			// Open this row
-			var additionalData =
-				'<div class="details-content"><a href="">View Files</a></div>';
-			row.child(additionalData).show();
-			tr.addClass('shown');
-		}
-	});
-});
+// 		if (row.child.isShown()) {
+// 			// This row is already open; close it
+// 			row.child.hide();
+// 			tr.removeClass('shown');
+// 		} else {
+// 			// Open this row
+// 			var additionalData =
+// 				'<div class="details-content"><a href="">View Files</a></div>';
+// 			row.child(additionalData).show();
+// 			tr.addClass('shown');
+// 		}
+// 	});
+// });

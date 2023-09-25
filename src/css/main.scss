@@ -138,19 +138,9 @@ a.sidebar-link {
     border-radius: 20px;
 }
 
-.details-control {
-    cursor: pointer;
-    user-select: none;
+.list-group-item{
+    background: #77c7c7;
 }
-.details-control:before {
-    content: '➕'; /* Plus icon */
-    color: #c1e4f0;
-    font-size: 20px;
-}
-tr.details td {
-    padding: 0;
-}
-
 
 /* Responsive */
 
