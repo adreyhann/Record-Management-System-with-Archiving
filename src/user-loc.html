@@ -9,7 +9,21 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
+		/>
 		<script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+		<script
+			defer
+			src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"
+		></script>
+		<script
+			defer
+			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
+		></script>
+		<script defer src="js/users-table.js"></script>
         <script defer src="js/users-details.js"></script>
 		<title>Dashboard</title>
 	</head>
@@ -134,14 +148,14 @@
 					</div>
 				</nav>
 				<div class="container-lg">
-					<h2 class="mt-2">Account Details</h2>
+					<h2 class="mt-2">Record Details</h2>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-4 mt-2 border-end">
 								<h3>About</h3>
 								<ul class="list-group border-0">
-									<li> <a class="list-group-item list-group-item-action active rounded-top border-0" aria-current="true">Overview</a></li>
-									<li> <a class="list-group-item list-group-item-action border-0">Places lives</a> </li>
+									<li> <a class="list-group-item list-group-item-action active rounded-top border-0" href="">Overview</a></li>
+									<li> <a class="list-group-item list-group-item-action border-0" aria-current="true" id="load-content-button">Places lives</a> </li>
 									<li> <a class="list-group-item list-group-item-action border-0" href="">Contact</a></li>
                                     <li> <a class="list-group-item list-group-item-action border-0" href="">Settings</a></li>
 								</ul>
@@ -149,22 +163,54 @@
 							<div class="content-container col mt-2">
                                 <h3>Overview</h3>
 								<ul class="list-group border-0">
-									<li class="list-group-item  border-0">
-                                        Last Name:
-                                    </li>
+									<li class="list-group-item  border-0">Student Number:</li>
+									<li class="list-group-item  border-0">Last Name:</li>
                                     <li class="list-group-item border-0">First Name: </li>
-                                    <li class="list-group-item border-0">Gender:</li>
+                                    <li class="list-group-item border-0">Gender: </li>
 									<li class="list-group-item border-0">Email Address: </li>
-                                    <li class="list-group-item border-0">Password: </li>
+                                    <li class="list-group-item border-0">Lives in: </li>
 									<li class="list-group-item border-0">Contact Number: </li>
-                                    <li class="list-group-item border-0">Role: </li>
-                                    <li class="list-group-item border-0">Class Advisor: </li>
-                                    <li class="list-group-item border-0">Subject Advisory: </li>
+                                    <li class="list-group-item border-0">Date Created: </li>
+                                    <li class="list-group-item border-0">Year Level: </li>
+                                    <li class="list-group-item border-0">School Year: </li>
 								</ul>
                             </div>
 						</div>
 					</div>
 				</div>
+				<section>
+					<div class="container-lg">
+						<hr>
+						<h3 class="text-center">Files</h3>
+						<div class="folders-table">
+							<table id="example" class="table table-striped hover" style="width: 100%" >
+								<thead>
+									<tr class="table-info">
+										<th>File Name</th>
+										<th>Size</th>
+										<th>Type</th>
+										<th>Date Uploaded</th>
+										<th>Status</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+								<tfoot>
+									<tr class="table-info">
+										<th>File Name</th>
+										<th>Size</th>
+										<th>Type</th>
+										<th>Date Uploaded</th>
+										<th>Status</th>
+										<th>Action</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
