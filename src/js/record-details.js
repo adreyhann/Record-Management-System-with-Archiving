@@ -1,6 +1,7 @@
 document.getElementById("settings").addEventListener("click", function() {
     // URL of the content you want to load
-    const contentUrl = "Settings.html";
+    const contentUrl = "stud-detail-settings.html";
+
 
     // Fetch the content using the Fetch API
     fetch(contentUrl)
@@ -20,9 +21,10 @@ document.getElementById("settings").addEventListener("click", function() {
         });
 });
 
-document.getElementById("places-lives").addEventListener("click", function() {
+
+document.getElementById("contacts").addEventListener("click", function() {
     // URL of the content you want to load
-    const contentUrl = "places-lives.html";
+    const contentUrl = "stud-contact.html";
 
 
     // Fetch the content using the Fetch API
@@ -37,23 +39,15 @@ document.getElementById("places-lives").addEventListener("click", function() {
             // Update the content container with the loaded data
             document.getElementById("content-container").innerHTML = data;
 
-            // // Add the 'active' class to the clicked button
-            // document.getElementById("places-lives").classList.add("active");
-
-            // // Remove the 'active' class from other items
-            // const items = document.querySelectorAll(".item");
-            // items.forEach(item => {
-            //     item.classList.remove("active");
-            // });
         })
         .catch(error => {
             console.error("Error fetching content:", error);
         });
 });
 
-document.getElementById("contact").addEventListener("click", function() {
+document.getElementById("location").addEventListener("click", function() {
     // URL of the content you want to load
-    const contentUrl = "contact.html";
+    const contentUrl = "stud-loc.html";
 
 
     // Fetch the content using the Fetch API
@@ -73,4 +67,3 @@ document.getElementById("contact").addEventListener("click", function() {
             console.error("Error fetching content:", error);
         });
 });
-

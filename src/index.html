@@ -8,7 +8,7 @@
 			src="https://kit.fontawesome.com/ae360af17e.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="main.css" />
 		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		<script defer src="js/charts.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -136,41 +136,28 @@
 				</nav>
 				<div class="container-lg">
 					<h2 class="mt-2">Dashboard</h2>
-					<div class="row d-flex justify-content-evenly">
-						<div class="card mx-4 mb-3 p-0" style="width: 18rem">
-							<img src="img/account-bg.jpg" class="card-img" alt="" />
-							<div class="card-body card-img-overlay">
-								<h5 class="card-title">Accounts</h5>
-								<p class="card-text">List of all accounts</p>
-								<a
-									href="account-management.html"
-									class="btn bg-primary-subtle mt-4"
-									>View Accounts</a
-								>
+					<div class="row d-flex justify-content-evenly my-4">
+						<div class="card custom-card " style="width: 18rem; height: 130px;">
+							<div class="card-body">
+							  <h5 class="card-title position-relative">Accounts <span class="badge text-bg-secondary position-absolute top-0 end-0">10</span> </h5>
+							  <p class="card-text">View list of users accounts</p>
+							  <a href="account-management.html" class="card-link">View Accounts</a>
 							</div>
 						</div>
 
-						<div class="card mx-4 mb-3 p-0" style="width: 18rem">
-							<img src="img/record-bg.jpg" class="card-img" alt="" />
-							<div class="card-body card-img-overlay">
-								<h5 class="card-title">Records</h5>
-								<p class="card-text">List of all records</p>
-								<a
-									href="records-management.html"
-									class="btn bg-primary-subtle mt-4"
-									>View Records</a
-								>
+						<div class="card custom-card" style="width: 18rem; height: 130px;">
+							<div class="card-body">
+							  <h5 class="card-title position-relative">Records <span class="badge text-bg-secondary position-absolute top-0 end-0">50</span> </h5>
+							  <p class="card-text">List of active records</p>
+							  <a href="records-management.html" class="card-link">View Records</a>
 							</div>
 						</div>
 
-						<div class="card mx-4 mb-3 p-0" style="width: 18rem">
-							<img src="img/account-bg.jpg" class="card-img" alt="" />
-							<div class="card-body card-img-overlay">
-								<h5 class="card-title">Archive Records</h5>
-								<p class="card-text">List of all archived records</p>
-								<a href="archives.html" class="btn bg-primary-subtle mt-4"
-									>View Archives</a
-								>
+						<div class="card custom-card" style="width: 18rem; height: 130px;">
+							<div class="card-body">
+							  <h5 class="card-title position-relative">Archives <span class="badge text-bg-secondary position-absolute top-0 end-0">40</span> </h5>
+							  <p class="card-text">List of Archived records.</p>
+							  <a href="archives.html" class="card-link">View Archives</a>
 							</div>
 						</div>
 					</div>

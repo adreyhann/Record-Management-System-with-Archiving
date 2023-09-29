@@ -8,7 +8,7 @@
 			src="https://kit.fontawesome.com/ae360af17e.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="main.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
@@ -24,7 +24,7 @@
 			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
 		></script>
 		<script defer src="js/users-table.js"></script>
-        <script defer src="js/users-details.js"></script>
+        <script defer src="js/record-details.js"></script>
 		<title>Dashboard</title>
 	</head>
 	<body>
@@ -152,28 +152,100 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-4 mt-2 border-end">
-								<h3>About</h3>
+								<h3>Menu</h3>
 								<ul class="list-group border-0">
-									<li> <a class="list-group-item list-group-item-action active rounded-top border-0" href="">Overview</a></li>
-									<li> <a class="list-group-item list-group-item-action border-0" aria-current="true" id="load-content-button">Places lives</a> </li>
-									<li> <a class="list-group-item list-group-item-action border-0" href="">Contact</a></li>
-                                    <li> <a class="list-group-item list-group-item-action border-0" href="">Settings</a></li>
+									<li> <a class="list-group-item list-group-item-action rounded-top border-0" href="">Overview</a></li>
+									<li> <a class="list-group-item list-group-item-action border-0" aria-current="true" id="location">Places lives</a> </li>
+									<li> <a class="list-group-item list-group-item-action border-0" id="contacts">Contact</a></li>
+                                    <li> <a class="list-group-item list-group-item-action rounded-bottom border-0" aria-current="true" id="settings">Settings</a></li>
 								</ul>
 							</div>
-							<div class="col mt-2">
+							<div class="col mt-2" id="content-container">
                                 <h3>Overview</h3>
-								<ul class="list-group border-0">
-									<li class="list-group-item  border-0">Student Number:</li>
-									<li class="list-group-item  border-0">Last Name:</li>
-                                    <li class="list-group-item border-0">First Name: </li>
-                                    <li class="list-group-item border-0">Gender: Male </li>
-									<li class="list-group-item border-0">Email Address: </li>
-                                    <li class="list-group-item border-0">Lives in: </li>
-									<li class="list-group-item border-0">Contact Number: </li>
-                                    <li class="list-group-item border-0">Date Created: </li>
-                                    <li class="list-group-item border-0">Year Level: </li>
-                                    <li class="list-group-item border-0">School Year: </li>
-								</ul>
+								<div class="container">
+									<div class="card">
+										<div class="card-header">
+											Student Record Details
+										</div>
+										<div class="card-body scrollable">
+											<p>Student Information Overview</p>
+											<ul>
+												<li>
+													<a href=""
+														><h5>Student number</h5>
+														<p class="text-light-emphasis">
+															12381298019
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Name</h5>
+														<p class="text-light-emphasis">
+															Adrian Melibo
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Gender</h5>
+														<p class="text-light-emphasis">
+															Male
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Email Address</h5>
+														<p class="text-light-emphasis">
+															meliboadrian@gmail.com
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Lives In</h5>
+														<p class="text-light-emphasis">
+															Tagaytay City
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Contact Number</h5>
+														<p class="text-light-emphasis">
+															09201394304
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Date Created</h5>
+														<p class="text-light-emphasis">
+															September 30, 2023
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>Year level</h5>
+														<p class="text-light-emphasis">
+															Grade 5
+														</p></a
+													>
+												</li>
+												<li>
+													<a href=""
+														><h5>School Year</h5>
+														<p class="text-light-emphasis">
+															2022-2023
+														</p></a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
                             </div>
 						</div>
 					</div>

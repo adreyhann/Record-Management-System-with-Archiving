@@ -139,10 +139,18 @@ a.sidebar-link {
 }
 
 .list-group-item{
-    background: #77c7c7;
+    background: #ffffff;
 }
 
-/* Responsive */
+.custom-card{
+    border: none;
+    border-radius: 16px;
+    background: #ddf4ed;
+    box-shadow:  -5px 5px 6px #d2e8e1,
+                5px -5px 6px #e8fff9;
+}
+
+/* Responsive */    
 
 @media (min-width:768px) {
     .content {
