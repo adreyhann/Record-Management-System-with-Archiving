@@ -11989,6 +11989,13 @@ a.sidebar-link {
   box-shadow: -5px 5px 6px #d2e8e1, 5px -5px 6px #e8fff9;
 }
 
+.mypdf {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+}
+
 /* Responsive */
 @media (min-width: 768px) {
   .content {
