@@ -19,7 +19,7 @@
 		></script>
         <script defer src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
         <script src="js/calendar.js"></script>
-		<title>Calendar</title>
+		<title>Reports</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -72,7 +72,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="#"
+								href="archives.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="auth"
@@ -83,7 +83,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="#"
+								href="calendar.html"
 								class="sidebar-link"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -140,7 +140,40 @@
 					</div>
 				</nav>
 				<div class="container">
-					<div class="container mt-2" id='calendar'></div>
+					<h2 class="my-1">
+						Generate reports > <small style="color: #b8b894">admin</small>
+					</h2>
+					<a id="addRow" class="btn btn-success my-2" data-bs-toggle="modal"
+						data-bs-target="#report-modal" href="">Create new report</a>
+					
+					<div class="card">
+						<div class="card-header text-center">
+						  Reports
+						</div>
+						<div class="card-body text-center">
+							
+						  <h5 class="card-title">Current reports</h5>
+						  <iframe src="docs/ELEM SF9 (Learner's Progress Report Card).pdf" style="height: 100vh; width: 100%;" frameborder="0"></iframe>
+						  <a href="#" class="btn btn-primary">Download PDF file</a>
+						</div>
+					  </div>
+				</div>
+				<div 
+					class="modal fade"
+					id="report-modal"
+					tabindex="-1"
+					aria-labelledby="modal-title"
+					aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modal-title">Create new reports</h5>
+							</div>
+							<div class="modal-body">
+
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
