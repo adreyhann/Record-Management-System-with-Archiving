@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/ae360af17e.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="main.css" />
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script defer src="js/charts.js"></script>
+		<script defer src="js/handling-file.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<title>Profile</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Sidebar -->
+			<aside id="sidebar">
+				<div class="h-50">
+					<div class="sidebar-logo">
+						<a href="">
+							<img
+								src="img/[removal.ai]_tmp-649e357422452.png"
+								class="img-thumbnail border-0"
+								alt="BCA"
+							/>
+						</a>
+					</div>
+					<!-- Sidebar Navigation -->
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+							<a
+								href="index.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-solid fa-sliders pe-2"></i>
+								Dashboard
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="account-management.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="users"
+							>
+								<i class="fa-solid fa-user pe-2"></i>
+								Account Management
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="records-management.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="pages"
+							>
+								<i class="fa-regular fa-file-lines pe-2"></i>
+								Records Management
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="archives.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="auth"
+							>
+								<i class="fa-regular fa-user pe-2"></i>
+								Archives
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="calendar.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-regular fa-calendar pe-2"></i>
+								Calendar
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="reports.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-regular fa-flag pe-2"></i>
+								Reports
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<!-- Main Component -->
+			<div class="main">
+				<nav class="navbar navbar-expand-lg px-1 border-bottom">
+					<!-- Button for sidebar toggle -->
+					<div class="container-fluid">
+						<button class="btn" type="button" data-bs-theme="light">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<ul class="navbar-nav">
+							<!-- Added this ul element for right-aligned items -->
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<span class="fa-solid fa-user pe-2"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-lg-end">
+									<li><a class="dropdown-item" href="#">View Profile</a></li>
+									<li><a class="dropdown-item" href="#">History Logs</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="login-page.html">Logout</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="container-lg">
+					<h2 class="mt-2">Profile</h2>
+					<hr />
+					<div class="card custom-card-2 border-0">
+						<div class="card-header bg-info-subtle">
+							<h3 class="mt-1">Account Information</h3>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Profile picture</h5>
+							<div
+								class="container-sm ps-3 d-flex justify-content-start position-relative"
+								id="profile-container"
+							>
+								<img
+									class="rounded float-start rounded-circle"
+									id="profile-image"
+									src="img/pain.jpg"
+									alt=""
+									style="height: 100px"
+								/>
+
+								<input
+									type="file"
+									id="file-input"
+									style="height: 50px; padding-left: 40rem"
+									class="position-absolute top-50 start-0 translate-middle"
+								/>
+							</div>
+							<hr />
+							<div>
+								<h3>Personal Information</h3>
+								<div class="row g-2">
+									<div class="col-md-6">
+										<div class="form-floating">
+											<input
+												type="text"
+												class="form-control"
+												id="floatingInputGrid"
+												placeholder="Last Name"
+												value=""
+											/>
+											<label for="floatingInputGrid">Last Name</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-floating">
+											<input
+												type="text"
+												class="form-control"
+												id="floatingInputGrid"
+												placeholder="Last Name"
+												value=""
+											/>
+											<label for="floatingInputGrid">First Name</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-floating">
+											<select class="form-select" id="floatingSelectGrid">
+												<option value="1">Male</option>
+												<option value="2">Female</option>
+											</select>
+											<label for="floatingSelectGrid">Gender</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-floating">
+											<input
+												type="date"
+												class="form-control"
+												id="floatingInputGrid"
+												placeholder="Last Name"
+												value="Melibo"
+											/>
+											<label for="floatingInputGrid">Date of Birth</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-floating">
+											<input
+												type="number"
+												class="form-control"
+												id="floatingInputGrid"
+												placeholder="Phone Number"
+												value=""
+											/>
+											<label for="floatingInputGrid">Phone number</label>
+										</div>
+									</div>
+									<div class="col-md">
+										<div class="form-floating">
+											<input
+												type="email"
+												class="form-control"
+												id="floatingInputGrid"
+												placeholder="name@example.com"
+												value=""
+											/>
+											<label for="floatingInputGrid">Email address</label>
+										</div>
+									</div>
+									<hr />
+									<h3>Position</h3>
+									<div class="col-md-4">
+										<div class="form-floating">
+											<select class="form-select" id="floatingSelectGrid">
+												<option value="1">Admin</option>
+												<option value="2">Class Advisor</option>
+											</select>
+											<label for="floatingSelectGrid">Current Position</label>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-floating">
+											<select class="form-select" id="floatingSelectGrid">
+												<option value="1">Admin</option>
+												<option value="2">Class Advisor</option>
+											</select>
+											<label for="floatingSelectGrid">New Position</label>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-floating">
+											<input
+												type="date"
+												class="form-control"
+												id="floatingInputGrid"
+												placeholder="Last Name"
+												value=""
+											/>
+											<label for="floatingInputGrid">Active Date</label>
+										</div>
+									</div>
+                                    <table class="table my-4">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th scope="col">Positon</th>
+                                                <th scope="col">Active Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Admin</td>
+                                                <td>10/08/2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button type="button" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

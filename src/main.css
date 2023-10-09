@@ -11913,13 +11913,18 @@ li {
 }
 
 .sidebar-logo {
-  padding: 1.15rem 3rem;
+  padding: 1.15rem 3.6rem;
+  animation: rotate 16s linear infinite;
 }
 
 .sidebar-logo a {
   color: #000000;
   font-size: 1.25rem;
   font-weight: 600;
+}
+
+.sidebar-item a:hover {
+  border-bottom: 2px solid #007BFF;
 }
 
 .sidebar-nav {
@@ -12002,6 +12007,14 @@ a.sidebar-link {
   margin: 0px;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Responsive */
 @media (min-width: 768px) {
   .content {

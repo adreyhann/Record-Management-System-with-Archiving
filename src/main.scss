@@ -33,6 +33,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 li {
@@ -72,15 +73,20 @@ li {
 }
 
 .sidebar-logo {
-    padding: 1.15rem 3.0rem;
+    padding: 1.15rem 3.6rem;
+    animation: rotate 16s linear infinite;
 }
 
 .sidebar-logo a {
     color: #000000;
     font-size: 1.25rem;
     font-weight: 600;
-    
 }
+
+.sidebar-item a:hover{
+    border-bottom: 2px solid #007BFF;
+}
+
 
 .sidebar-nav {
     padding: 0;
@@ -98,6 +104,7 @@ a.sidebar-link {
     position: relative;
     display: block;
     font-size: 1rem;
+    
 }
 
 .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -162,6 +169,15 @@ a.sidebar-link {
     height: 100vh;
     overflow: hidden;
     margin: 0px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Responsive */    

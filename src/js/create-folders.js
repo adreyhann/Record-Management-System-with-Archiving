@@ -1,7 +1,6 @@
 let folders = [];
-let selectedFolderIndex = -1; // Track the selected folder for editing
+let selectedFolderIndex = -1; 
 
-// Function to add folders to the list
 function addFoldersToList() {
     let folderList = $('#folderList');
     folderList.empty();
@@ -17,19 +16,19 @@ $('#saveFolder').on('click', function() {
     let folderName = $('#folderName').val();
     if (folderName.trim() !== '') {
         if (selectedFolderIndex === -1) {
-            // Create a new folder
+            
             folders.push(folderName);
         } else {
-            // Edit the selected folder
+            
             folders[selectedFolderIndex] = folderName;
-            selectedFolderIndex = -1; // Reset selected folder index
+            selectedFolderIndex = -1; 
         }
         addFoldersToList();
         $('#folderName').val('');
     }
 });
 
-// Event handler for editing a folder
+
 $('#folderList').on('click', '.edit-folder', function() {
     selectedFolderIndex = $(this).data('index');
     $('#folderName').val(folders[selectedFolderIndex]);
