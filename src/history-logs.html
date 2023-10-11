@@ -9,9 +9,7 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="main.css" />
-		<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-		<script defer src="js/charts.js"></script>
-		<script defer src="js/handling-file.js"></script>
+		<script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<title>Profile</title>
 	</head>
@@ -135,15 +133,38 @@
 						</ul>
 					</div>
 				</nav>
-				<div class="container-lg">
+				<div class="container-lg position-relative">
 					<h2 class="mt-2">History logs</h2>
+					
 					<hr />
+					<div class="dropdown position-absolute top-0 end-0" style="padding-top: 20px; margin-right: 10px;">
+						<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Filter by user
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="#">All users</a></li>
+						  <li><a class="dropdown-item" href="#">Adrian Melibo</a></li>
+						  <li><a class="dropdown-item" href="#">Ryan Montemayor</a></li>
+						</ul>
+					</div>
+					<!-- <div class="dropdown position-absolute top-0 end-0" style="padding-top: 20px; padding-right: 8rem; margin-right: 10px;">
+						<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Filter by action
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="#">Upload</a></li>
+						  <li><a class="dropdown-item" href="#">Archived</a></li>
+						  <li><a class="dropdown-item" href="#">Modify</a></li>
+						  <li><a class="dropdown-item" href="#">Log in</a></li>
+						  <li><a class="dropdown-item" href="#">Log out</a></li>
+						</ul>
+					</div> -->
 					<div class="card my-2 custom-card-2 border-0">
 						<div class="card-body position-relative">
 							<p class="m-0 fs-5 fw-medium">Ryan uploaded a document.</p>
 							<p class="m-0" style="color: #72726e">Today 12:30pm</p>
 							<p
-								class="d-inline-flex gap-1 mb-0 position-absolute top-0 end-0 translate-middle sticky-top"
+								class="d-inline-flex gap-1 mb-0 position-absolute top-0 end-0 translate-middle"
 								style="padding-top: 80px"
 							>
 								<a
