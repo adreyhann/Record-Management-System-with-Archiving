@@ -7,15 +7,12 @@
 			src="https://kit.fontawesome.com/ae360af17e.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="../css/main.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
 		/>
-		<script
-			defer
-			src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-		></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
 		<script
 			defer
@@ -25,9 +22,9 @@
 			defer
 			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
 		></script>
-		<script defer src="js/users-table.js"></script>
-		<script defer src="js/upload file.js"></script>
-        <script defer src="js/archives-details.js"></script>
+		<script defer src="../js/users-table.js"></script>
+		<script defer src="../js/upload file.js"></script>
+        <script defer src="../js/archives-details.js"></script>
 		<title>Records</title>
 	</head>
 	<body>
@@ -37,7 +34,7 @@
 					<div class="sidebar-logo">
 						<a href="">
 							<img
-								src="img/[removal.ai]_tmp-649e357422452.png"
+								src="../img/[removal.ai]_tmp-649e357422452.png"
 								class="img-thumbnail border-0"
 								alt="BCA"
 							/>
@@ -47,7 +44,7 @@
 					<ul class="sidebar-nav">
 						<li class="sidebar-item">
 							<a
-								href="index.html"
+								href="../admin-ui/index.html"
 								class="sidebar-link"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -59,7 +56,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="account-management.html"
+								href="../admin-ui/account-management.html"
 								class="sidebar-link"
 								data-bs-target="#"
 								aria-expanded="false"
@@ -71,7 +68,7 @@
 						</li>	
 						<li class="sidebar-item">
 							<a
-								href="records-management.html"
+								href="../admin-ui/records-management.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="pages"
@@ -79,22 +76,9 @@
 								<i class="fa-regular fa-file-lines pe-2"></i>
 								Records Management
 							</a>
-							<ul
-								id="records"
-								class="sidebar-dropdown list-unstyled collapse"
-								data-bs-parent="#sidebar"
-							>
-								<li class="sidebar-item">
-									<a href="#" class="sidebar-link">SF9e</a>
-								</li>
-								<li class="sidebar-item">
-									<a href="#" class="sidebar-link">SF10e</a>
-								</li>
-							</ul>
-						</li>
 						<li class="sidebar-item">
 							<a
-								href="#"
+								href="../admin-ui/archives.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="auth"
@@ -105,7 +89,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="calendar.html"
+								href="../admin-ui/calendar.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -117,7 +101,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="#"
+								href="../admin-ui/reports.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -152,10 +136,10 @@
 									<span class="fa-solid fa-user pe-2"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-menu-lg-end">
-									<li><a class="dropdown-item" href="admin-profile.html">View Profile</a></li>
-									<li><a class="dropdown-item" href="history-logs.html">History logs</a></li>
+									<li><a class="dropdown-item" href="../admin-ui/admin-profile.html">View Profile</a></li>
+									<li><a class="dropdown-item" href="../admin-ui/history-logs.html">History logs</a></li>
 									<li><hr class="dropdown-divider" /></li>
-									<li><a class="dropdown-item" href="login-page.html">Logout</a></li>
+									<li><a class="dropdown-item" href="../login-page.html">Logout</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -289,7 +273,7 @@
                                             <td>PDF</td>
                                             <td>30/09/2023</td>
                                             <td>Active</td>
-                                            <td><a type="button" class="btn btn-primary " href="render-pdf.html" target="_blank">View File</a></td>
+                                            <td><a type="button" class="btn btn-primary " href="../admin-ui/render-pdf.html" target="_blank">View File</a></td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -311,6 +295,6 @@
 			</div>
 		</div>
 
-		<script src="js/script.js"></script>
+		<script src="../js/script.js"></script>
 	</body>
 </html>

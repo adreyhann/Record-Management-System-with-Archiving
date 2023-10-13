@@ -7,15 +7,16 @@
 			src="https://kit.fontawesome.com/ae360af17e.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="../css/main.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
 		/>
-		<script
+		<!-- <script
 			defer
 			src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-		></script>
+		></script> -->
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
 		<script
 			defer
@@ -25,9 +26,8 @@
 			defer
 			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
 		></script>
-		<script defer src="js/users-table.js"></script>
-		<script defer src="js/add-user.js"></script>
-		<script defer src="js/popovers.js"></script>
+		<script defer src="../js/users-table.js"></script>
+		<script defer src="../js/add-user.js"></script>
 		<title>Accounts</title>
 	</head>
 	<body>
@@ -37,7 +37,7 @@
 					<div class="sidebar-logo">
 						<a href="">
 							<img
-								src="img/[removal.ai]_tmp-649e357422452.png"
+								src="../img/[removal.ai]_tmp-649e357422452.png"
 								class="img-thumbnail border-0"
 								alt="BCA"
 							/>
@@ -47,7 +47,7 @@
 					<ul class="sidebar-nav">
 						<li class="sidebar-item">
 							<a
-								href="index.html"
+								href="../admin-ui/index.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -59,7 +59,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="account-management.html"
+								href="../admin-ui/account-management.html"
 								class="sidebar-link"
 								data-bs-target="#"
 								aria-expanded="false"
@@ -71,7 +71,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="records-management.html"
+								href="../admin-ui/records-management.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="pages"
@@ -82,7 +82,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="archives.html"
+								href="../admin-ui/archives.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="auth"
@@ -93,7 +93,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="calendar.html"
+								href="../admin-ui/calendar.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -105,7 +105,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="reports.html"
+								href="../admin-ui/reports.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -140,8 +140,8 @@
 									<span class="fa-solid fa-user pe-2"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-menu-lg-end">
-									<li><a class="dropdown-item" href="admin-profile.html">View Profile</a></li>
-									<li><a class="dropdown-item" href="history-logs.html">History logs</a></li>
+									<li><a class="dropdown-item" href="../admin-ui/admin-profile.html">View Profile</a></li>
+									<li><a class="dropdown-item" href="../admin-ui/history-logs.html">History logs</a></li>
 									<li><hr class="dropdown-divider" /></li>
 									<li><a class="dropdown-item" href="#">Logout</a></li>
 								</ul>
@@ -151,7 +151,7 @@
 				</nav>
 				<div class="container-lg">
 					<h2 class="my-1">
-						Account Management > <small style="color: #b8b894">admin</small>
+						Account Management
 					</h2>
 					<hr>
 					<div class="container w-100">
@@ -183,7 +183,7 @@
 									<td></td>
 									<td>montemayor@gmail.com</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 
@@ -198,7 +198,7 @@
 									<td>ching@gmail.com</td>
 
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -211,7 +211,7 @@
 									<td>toledo@gmail.com</td>
 
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -224,7 +224,7 @@
 									<td>daniel@gmail.com</td>
 
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								
@@ -238,7 +238,7 @@
 									<td>lee@gmail.com</td>
 
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -251,7 +251,7 @@
 									</td>
 									<td>sanji@gmail.com</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -263,7 +263,7 @@
 									<td>Science</td>
 									<td>nami@gmail.com</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -276,7 +276,7 @@
 									</td>
 									<td>gojo@gmail.com</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -289,7 +289,7 @@
 									</td>
 									<td>doe@gmail.com</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
@@ -301,7 +301,7 @@
 									<td>EPP</td>
 									<td>uzumaki@gmail.com</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="manage.html">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../admin-ui/manage.html">Manage</a>
 									</td>
 								</tr>
 							</tbody>
@@ -339,9 +339,14 @@
 										<input type="password" class="form-control" id="modal-password" placeholder="*******" required>
 										<label for="modal-text" class="form-label mt-2">Enter Gender</label>
 										<input type="text" class="form-control" id="modal-text" placeholder="">
+										<label for="modal-number" class="form-label mt-2">Enter Contact number</label>
+										<input type="number" class="form-control" id="modal-number" placeholder="">
+										<label for="modal-subject" class="form-label mt-2">Subject Advisory</label>
+										<input type="text" class="form-control" id="modal-subject" placeholder="">
 										<div class="col md-6">
 											<label for="validationDefault04" class="form-label">Role</label>
 											<select class="form-select" id="validationDefault04" required>
+												<option value="" disabled selected>Select role</option>
 												<option>Admin</option>
 												<option>Class Advisor <p class="text-info">(kinder)</p></option>
 												<option>Class Advisor <p class="text-info">(Grade 1)</option>
@@ -367,6 +372,6 @@
 			</div>
 		</div>
 
-		<script src="js/script.js"></script>
+		<script src="../js/script.js"></script>
 	</body>
 </html>
