@@ -3,7 +3,7 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/dist/css/bootstrap.css";
 
 // Then add additional custom code here
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -74,7 +74,7 @@ li {
 
 .sidebar-logo {
     padding: 1.15rem 3.6rem;
-    animation: rotate 16s linear infinite;
+    
 }
 
 .sidebar-logo a {
@@ -171,14 +171,7 @@ a.sidebar-link {
     margin: 0px;
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+
 
 /* Responsive */    
 

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/ae360af17e.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"
+		/>
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+		<script
+			defer
+			src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"
+		></script>
+		<script
+			defer
+			src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"
+		></script>
+		<script defer src="../js/users-table.js"></script>
+		<title>Records</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<aside id="sidebar">
+				<div class="h-50">
+					<div class="sidebar-logo">
+						<a href="">
+							<img
+								src="../img/[removal.ai]_tmp-649e357422452.png"
+								class="img-thumbnail border-0"
+								alt="BCA"
+							/>
+						</a>
+					</div>
+					<!-- Sidebar Navigation -->
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+							<a
+								href="../sys-admin-ui/index.html"
+								class="sidebar-link"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-solid fa-sliders pe-2"></i>
+								Dashboard
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="../sys-admin-ui/account-management.html"
+								class="sidebar-link"
+								data-bs-target="#"
+								aria-expanded="false"
+								aria-controls="users"
+							>
+								<i class="fa-solid fa-user pe-2"></i>
+								Account Management
+							</a>
+						</li>	
+						<li class="sidebar-item">
+							<a
+								href="../sys-admin-ui/records-management.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="pages"
+							>
+								<i class="fa-regular fa-file-lines pe-2"></i>
+								Records Management
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="../sys-admin-ui/archives.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="auth"
+							>
+								<i class="fa-solid fa-archive pe-2"></i>
+								Archives
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="../sys-admin-ui/calendar.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-regular fa-calendar pe-2"></i>
+								Calendar
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="../sys-admin-ui/reports.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								aria-controls="dashboard"
+							>
+								<i class="fa-regular fa-flag pe-2"></i>
+								Reports
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<div class="main">
+				<nav class="navbar navbar-expand-lg px-1 border-bottom">
+					<!-- Button for sidebar toggle -->
+					<div class="container-fluid">
+						<button class="btn" type="button" data-bs-theme="light">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<ul class="navbar-nav">
+							<!-- Added this ul element for right-aligned items -->
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<span class="fa-solid fa-user pe-2"></span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-lg-end">
+									<li><a class="dropdown-item" href="../sys-admin-ui/admin-profile.html">View Profile</a></li>
+									<li><a class="dropdown-item" href="../sys-admin-ui/history-logs.html">History logs</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li><a class="dropdown-item" href="../login-page.html">Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="container-lg">
+					<h2 class="my-1">
+						Records Management
+					</h2>
+					<hr>
+					<div class="container w-100">
+						<a id="addRow" class="btn btn-success my-2" data-bs-toggle="modal"
+						data-bs-target="#reg-modal" href="">Create new record</a>
+						<table
+							id="example"
+							class="table table-striped hover"
+							style="width: 100%"
+						>
+							<thead class="table-info">
+								<tr>
+									<th>LRN</th>
+									<th>Student Name</th>
+									<th>Year</th>
+									<th>Batch</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table-default">
+									<td>2199718274</td>
+									<td>Ryan Montemayor</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
+									<td>
+										<a class="btn btn-primary btn-sm" href="../sys-admin-ui/stud-details.html">Manage</a>
+										
+									</td>
+								</tr>
+
+								<tr>
+									<td>2314323211</td>
+									<td>Adrian Melibo</td>
+									<td>Grade 1</td>
+									<td>2022-2023</td>
+									<td>
+										<a class="btn btn-primary btn-sm" href="../sys-admin-ui/stud-details.html">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>413434523</td>
+									<td>Jhon Jervy Daniel</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
+									<td>
+										<a class="btn btn-primary btn-sm" href="../sys-admin-ui/stud-details.html">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>623626252</td>
+									<td>Carlos Ching</td>
+									<td>Kinder</td>
+									<td>2022-2023</td>
+									<td>
+										<a class="btn btn-primary btn-sm" href="../sys-admin-ui/stud-details.html">Manage</a>
+									</td>
+								</tr>
+								<tr>
+									<td>36896806743</td>
+									<td>Zean Toledo</td>
+									<td>Grade 2</td>
+									<td>2022-2023</td>
+									<td>
+										<a class="btn btn-primary btn-sm" href="../sys-admin-ui/stud-details.html">Manage</a>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot class="table-info">
+								<tr>
+									<th>LRN</th>
+									<th>Student Name</th>
+									<th>Year</th>
+									<th>Batch</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div
+						class="modal fade"
+						id="reg-modal"
+						tabindex="-1"
+						aria-labelledby="modal-title"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modal-title">Add new record</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+								</div>
+								<div class="modal-body">
+									<label for="modal-studNum m-0" class="form-label">Student Number</label>
+									<input type="text" class="form-control" id="modal-studNum" placeholder="" required>
+									<label for="modal-lastName m-0" class="form-label">Last Name</label>
+									<input type="text" class="form-control" id="modal-lastName" placeholder="Last Name" required>
+									<label for="modal-firstName" class="form-label mt-2">First Name</label>
+									<input type="text" class="form-control" id="modal-firstName" placeholder="First Name" required>
+									<label for="modal-gender" class="form-label mt-2">Gender</label>
+									<input type="" class="form-control" id="modal-gender" placeholder="" required>
+									<label for="modal-yearLevel" class="form-label mt-2">Year Level</label>
+									<input type="text" class="form-control" id="modal-yearLevel" placeholder="" required>
+									<label for="modal-schoolYear" class="form-label mt-2">School Year</label>
+									<input type="text" class="form-control" id="modal-text" placeholder="" required>
+									<div class="col md-6">
+										<label for="validationDefault04" class="form-label mt-2">Document Type</label>
+										<select class="form-select" id="validationDefault04" required>
+											<option>PDF</option>
+										</select>
+										<div class="invalid-feedback">
+											Please select a valid .
+										</div>
+									</div>
+									<div class="my-2">
+										<label for="formFileSm" class="form-label">Upload files</label>
+										<input class="form-control form-control-sm" id="formFileSm" type="file">
+									</div>
+									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/script.js"></script>
+	</body>
+</html>
