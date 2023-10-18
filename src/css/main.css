@@ -31,6 +31,11 @@ li {
   list-style: none;
 }
 
+.active {
+  border-right: 2px solid #007BFF;
+  background: #e3edf0;
+}
+
 /* Layout skeleton */
 .wrapper {
   align-items: stretch;
@@ -72,7 +77,8 @@ li {
 }
 
 .sidebar-item a:hover {
-  border-bottom: 2px solid #007BFF;
+  border-right: 2px solid #007BFF;
+  background: #e3edf0;
 }
 
 .sidebar-nav {
