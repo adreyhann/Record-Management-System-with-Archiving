@@ -28,6 +28,7 @@
 		></script>
 		<script defer src="../js/users-table.js"></script>
 		<script defer src="../js/add-user.js"></script>
+		<script defer src="../js/change-pfp.js"></script>
 		<title>Accounts</title>
 	</head>
 	<body>
@@ -328,9 +329,12 @@
 							</tfoot>
 						</table>
 					</div>
-					<div
-						class="modal fade"
+						
+						<div
+						class="modal fade modal-lg"
 						id="reg-modal"
+						data-bs-backdrop="static" 
+						data-bs-keyboard="false"
 						tabindex="-1"
 						aria-labelledby="modal-title"
 						aria-hidden="true"
@@ -342,8 +346,87 @@
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 								</div>
 								<div class="modal-body">
-									<form class="needs-validation" novalidate>
-										<label for="modal-username m-0" class="form-label">Enter Account Name</label>
+									<form>
+										<div class="container my-0">
+											<h4></h4>
+											<img
+											id="profile-image"
+											src="../img/5700c04197ee9a4372a35ef16eb78f4e.jpg"
+											alt="Profile Picture"
+											class="img-thumbnail img-fluid my-2 rounded"
+											style="width: 100px; height: 100px; border: none"
+										/>
+						
+										<a
+											href="#"
+											class="btn btn-primary btn-sm"
+											style="margin-top: 4rem"
+											id="change-profile-btn"
+											><i class="fa-solid fa-camera"></i
+										></a>
+										<input type="file" id="file-input" style="display: none" />
+
+										</div>
+										<div class="row">
+											<div class="col">
+												<label for="modal-email" class="form-label mt-2">Enter email address</label>
+												<input type="email" class="form-control" id="modal-email" placeholder="@example.com" required>
+											</div>
+										
+										</div>
+										<div class="row my-2">
+											<div class="col-6">
+												<label for="pass m-0" class="form-label">Create password</label>
+												<input type="text" class="form-control" id="pass" placeholder="Create password" required>
+											</div>
+											<div class="col-6">
+												<label for="con-pass m-0" class="form-label">Confirm Password</label>
+												<input type="text" class="form-control" id="con-pass" placeholder="Confirm password" required>
+											</div>
+										</div>
+										<hr>
+										<div class="row my-2">
+											<h5 class="mb-3">Personal Information</h5>
+											<div class="col-6">
+												<label for="lname m-0" class="form-label">Last Name</label>
+												<input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+											</div>
+											<div class="col-6">
+												<label for="lname m-0" class="form-label">First Name</label>
+												<input type="text" class="form-control" id="lname" placeholder="First Name" required>
+											</div>
+											<div class="col-6 mt-2">
+												<label for="gender" class="form-label">Gender</label>
+												<select class="form-select" id="gender" aria-label="Default select example">
+													<option disabled selected>Choose Gender</option>
+													<option value="male">Male</option>
+													<option value="female">Female</option>
+												</select>
+											</div>
+											<div class="col-6 mt-2">
+												<label for="contact-num m-0" class="form-label">Contact Number</label>
+												<input type="number" class="form-control" id="contact-num" placeholder="Phone number" required>
+											</div>
+											<div class="col-6 mt-2">
+												<label for="modal-subject" class="form-label mt-2">Subject Advisory</label>
+												<input type="text" class="form-control" id="modal-subject" placeholder="">
+											</div>
+											<div class="col-6 mt-3">
+												<label for="validationDefault04" class="form-label">Role</label>
+												<select class="form-select" id="validationDefault04" required>
+												<option value="" disabled selected>Select role</option>
+												<option>Admin</option>
+												<option>Class Advisor <p class="text-info">(kinder)</p></option>
+												<option>Class Advisor <p class="text-info">(Grade 1)</option>
+												<option>Class Advisor <p class="text-info">(Grade 2)</option>
+												<option>Class Advisor <p class="text-info">(Grade 3)</option>
+												<option>Class Advisor <p class="text-info">(Grade 4)</option>
+												<option>Class Advisor <p class="text-info">(Grade 5)</small></option>
+												<option>Class Advisor <p class="text-info">(Grade 6)</option>
+											</select>
+											</div>
+										</div>
+										<!-- <label for="modal-username m-0" class="form-label">Enter Account Name</label>
 										<input type="text" class="form-control" id="modal-username" placeholder="" required>
 										<label for="modal-email" class="form-label mt-2">Enter email</label>
 										<input type="email" class="form-control" id="modal-email" placeholder="@example.com" required>
@@ -367,11 +450,8 @@
 												<option>Class Advisor <p class="text-info">(Grade 4)</option>
 												<option>Class Advisor <p class="text-info">(Grade 5)</small></option>
 												<option>Class Advisor <p class="text-info">(Grade 6)</option>
-											</select>
-											<div class="invalid-feedback">
-												Please select a valid .
-											</div>
-										</div>
+											</select> -->
+										<!-- </div> -->
 									</form>
 								</div>
 								<div class="modal-footer">
@@ -380,6 +460,7 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
