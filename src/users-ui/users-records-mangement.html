@@ -45,7 +45,7 @@
 								<img src="../img/pain.jpg" class="img-fluid img-thumbnail" alt="...">
 							</div>
 							<div class="col-md-6">
-								<p class="my-0" style="font-size: 15px;">Adrian Melibo</p>
+								<p class="my-0" style="font-size: 15px;">Ryan Daniel</p>
 								<span class="badge rounded-pill text-bg-info my-0">Class Advisors</span>
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="../"
+								href="../users-ui/archives.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="auth"
@@ -88,7 +88,7 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="../"
+								href="../users-ui/calendar.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
@@ -96,18 +96,6 @@
 							>
 								<i class="fa-regular fa-calendar pe-2"></i>
 								Calendar
-							</a>
-						</li>
-						<li class="sidebar-item">
-							<a
-								href="../"
-								class="sidebar-link collapsed"
-								data-bs-target="#dashboard"
-								aria-expanded="false"
-								aria-controls="dashboard"
-							>
-								<i class="fa-regular fa-flag pe-2"></i>
-								Reports
 							</a>
 						</li>
 					</ul>
@@ -135,7 +123,7 @@
 									<span class="fa-solid fa-user pe-2"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-menu-lg-end">
-									<li><a class="dropdown-item" href="../">View Profile</a></li>
+									<li><a class="dropdown-item" href="../users-ui/users-profile.html">View Profile</a></li>
 									<li><hr class="dropdown-divider" /></li>
 									<li><a class="dropdown-item" href="../login-page.html">Logout</a></li>
 								</ul>
@@ -160,8 +148,8 @@
 								<tr>
 									<th>LRN</th>
 									<th>Student Name</th>
-									<th>Year</th>
-									<th>Batch</th>
+									<th>Gender</th>
+									<th>Grade level</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -169,10 +157,10 @@
 								<tr class="table-default">
 									<td>2199718274</td>
 									<td>Ryan Montemayor</td>
+									<td>Male</td>
 									<td>Kinder</td>
-									<td>2022-2023</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="../">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../users-ui/stud-details.html">Manage</a>
 										
 									</td>
 								</tr>
@@ -180,37 +168,37 @@
 								<tr>
 									<td>2314323211</td>
 									<td>Adrian Melibo</td>
+									<td>Male</td>
 									<td>Kinder</td>
-									<td>2022-2023</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="../">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../users-ui/stud-details.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
 									<td>413434523</td>
 									<td>Jhon Jervy Daniel</td>
+									<td>Male</td>
 									<td>Kinder</td>
-									<td>2022-2023</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="../">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../users-ui/stud-details.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
 									<td>623626252</td>
 									<td>Carlos Ching</td>
+									<td>Male</td>
 									<td>Kinder</td>
-									<td>2022-2023</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="../">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../users-ui/stud-details.html">Manage</a>
 									</td>
 								</tr>
 								<tr>
 									<td>36896806743</td>
 									<td>Zean Toledo</td>
+									<td>Male</td>
 									<td>Kinder</td>
-									<td>2022-2023</td>
 									<td>
-										<a class="btn btn-primary btn-sm" href="../">Manage</a>
+										<a class="btn btn-primary btn-sm" href="../users-ui/stud-details.html">Manage</a>
 									</td>
 								</tr>
 							</tbody>
@@ -218,8 +206,8 @@
 								<tr>
 									<th>LRN</th>
 									<th>Student Name</th>
-									<th>Year</th>
-									<th>Batch</th>
+									<th>Gender</th>
+									<th>Grade level</th>
 									<th>Action</th>
 								</tr>
 							</tfoot>
@@ -239,30 +227,35 @@
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 								</div>
 								<div class="modal-body">
-									<label for="modal-studNum m-0" class="form-label">Student Number</label>
-									<input type="text" class="form-control" id="modal-studNum" placeholder="" required>
+									<label for="modal-studNum m-0" class="form-label">LRN</label>
+									<input type="number" class="form-control" id="modal-studNum" placeholder="" min="1000000" required>
 									<label for="modal-lastName m-0" class="form-label">Last Name</label>
 									<input type="text" class="form-control" id="modal-lastName" placeholder="Last Name" required>
 									<label for="modal-firstName" class="form-label mt-2">First Name</label>
 									<input type="text" class="form-control" id="modal-firstName" placeholder="First Name" required>
 									<label for="modal-gender" class="form-label mt-2">Gender</label>
-									<input type="" class="form-control" id="modal-gender" placeholder="" required>
-									<label for="modal-yearLevel" class="form-label mt-2">Year Level</label>
-									<input type="text" class="form-control" id="modal-yearLevel" placeholder="" required>
-									<label for="modal-schoolYear" class="form-label mt-2">School Year</label>
-									<input type="text" class="form-control" id="modal-text" placeholder="" required>
-									<div class="col md-6">
-										<label for="validationDefault04" class="form-label mt-2">Document Type</label>
-										<select class="form-select" id="validationDefault04" required>
-											<option>PDF</option>
-										</select>
-										<div class="invalid-feedback">
-											Please select a valid .
-										</div>
-									</div>
+									<select name="gender" id="modal-gender" class="form-select">
+										<option disabled>Select Gender</option>
+										<option value="">Male</option>
+										<option value="">Female</option>
+									</select>
+									<label for="modal-yearLevel" class="form-label mt-2">Grade Level</label>
+									<select name="grade_level" id="grade_level" class="form-select">
+										<option disabled>Grade level</option>
+										<option value="">Kinder</option>
+										<option value="" disabled>Grade 1</option>
+										<option value="" disabled>Grade 2</option>
+										<option value="" disabled>Grade 3</option>
+										<option value="" disabled>Grade 4</option>
+										<option value="" disabled>Grade 5</option>
+										<option value="" disabled>Grade 6</option>
+									</select>
+									<hr class="mt-4">
+									<h5 class="text-center">Documents</h5>
+									
 									<div class="my-2">
 										<label for="formFileSm" class="form-label">Upload files</label>
-										<input class="form-control form-control-sm" id="formFileSm" type="file">
+										<input class="form-control form-control-sm" id="formFileSm" type="file" accept=".pdf">
 									</div>
 									
 								</div>

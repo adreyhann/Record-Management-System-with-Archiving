@@ -13,7 +13,7 @@
 		<script defer src="../js/charts.js"></script>
 		<script defer src="../js/time.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<title>Class Advisor</title>
+		<title>Dashboard</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -36,8 +36,8 @@
 								<img src="../img/pain.jpg" class="img-fluid img-thumbnail" alt="...">
 							</div>
 							<div class="col-md-6">
-								<p class="my-0" style="font-size: 15px;">Ryan Daniel</p>
-								<span class="badge rounded-pill text-bg-info my-0">Class Advisor</span>
+								<p class="my-0" style="font-size: 15px;">Adrian Melibo</p>
+								<span class="badge rounded-pill text-bg-info my-0 fw-normal">Admin</span>
 							</div>
 						</div>
 					</div>
@@ -45,11 +45,12 @@
 					<ul class="sidebar-nav">
 						<li class="sidebar-item">
 							<a
-								href="../users-ui/class-advisor-dashboard.html"
+								href="../admin-ui/admin-db.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
 								aria-controls="dashboard"
+								data-menuitem="dashboard"
 							>
 								<i class="fa-solid fa-sliders pe-2"></i>
 								Dashboard
@@ -57,10 +58,23 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="../users-ui/users-records-mangement.html"
+								href="../admin-ui/admin-acc-mng.html"
+								class="sidebar-link"
+								aria-expanded="false"
+								aria-controls="users"
+								data-menuitem="accounts"
+							>
+								<i class="fa-solid fa-user pe-2"></i>
+								Account Management
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="../admin-ui/admin-recrds-mng.html"
 								class="sidebar-link"
 								aria-expanded="false"
 								aria-controls="pages"
+								data-menuitem="records"
 							>
 								<i class="fa-regular fa-file-lines pe-2"></i>
 								Records Management
@@ -68,10 +82,10 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="../users-ui/archives.html"
+								href="../admin-ui/admin-archive-mng.html"
 								class="sidebar-link"
 								aria-expanded="false"
-								aria-controls="auth"
+								data-menuitem="archives"
 							>
 								<i class="fa-regular fa-user pe-2"></i>
 								Archives
@@ -79,14 +93,27 @@
 						</li>
 						<li class="sidebar-item">
 							<a
-								href="../users-ui/calendar.html"
+								href="../admin-ui/admin-calendar.html"
+								class="sidebar-link collapsed"
+								data-bs-target="#dashboard"
+								aria-expanded="false"
+								data-menuitem="calendar"
+							>
+								<i class="fa-regular fa-calendar pe-2"></i>
+								Calendar
+							</a>
+						</li>
+						<li class="sidebar-item">
+							<a
+								href="../admin-ui/admin-reports.html"
 								class="sidebar-link collapsed"
 								data-bs-target="#dashboard"
 								aria-expanded="false"
 								aria-controls="dashboard"
+								data-menuitem="reports"
 							>
-								<i class="fa-regular fa-calendar pe-2"></i>
-								Calendar
+								<i class="fa-regular fa-flag pe-2"></i>
+								Reports
 							</a>
 						</li>
 					</ul>
@@ -113,7 +140,16 @@
 									<span class="fa-solid fa-user pe-2"></span>
 								</a>
 								<ul class="dropdown-menu dropdown-menu-lg-end">
-									<li><a class="dropdown-item" href="../users-ui/users-profile.html">View Profile</a></li>
+									<li>
+										<a class="dropdown-item" href="../admin-ui/admin-profile.html"
+											>View Profile</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="../admin-ui/history-logs.html"
+											>History Logs</a
+										>
+									</li>
 									<li><hr class="dropdown-divider" /></li>
 									<li>
 										<a class="dropdown-item" href="../login-page.html">Logout</a>
@@ -128,9 +164,23 @@
 					<p id="time" class="text-end position-absolute top-0 end-0 pe-3 pt-4" style="font-size: 24px; font-weight: medium; padding-top: 0;"></p>
 					<hr />
 					<div class="row d-flex justify-content-center my-4 grid gap-5">
-						
+						<div class="card custom-card" style="width: 18rem; height: 130px">
+							<div class="card-body">
+								<h5 class="card-title position-relative">
+									Accounts
+									<span
+										class="badge text-bg-secondary position-absolute top-0 end-0"
+										>10</span
+									>
+								</h5>
+								<p class="card-text">View list of users accounts</p>
+								<a href="../admin-ui/admin-acc-mng.html" class="card-link"
+									>View Accounts</a
+								>
+							</div>
+						</div>
 
-						<div class="card custom-card" style="width: 27rem; height: 130px">
+						<div class="card custom-card" style="width: 18rem; height: 130px">
 							<div class="card-body">
 								<h5 class="card-title position-relative">
 									Records
@@ -140,13 +190,13 @@
 									>
 								</h5>
 								<p class="card-text">List of active records</p>
-								<a href="../users-ui/users-records-mangement.html" class="card-link"
+								<a href="../admin-ui/admin-recrds-mng.html" class="card-link"
 									>View Records</a
 								>
 							</div>
 						</div>
 
-						<div class="card custom-card" style="width: 27rem; height: 130px">
+						<div class="card custom-card" style="width: 18rem; height: 130px">
 							<div class="card-body">
 								<h5 class="card-title position-relative">
 									Archives
@@ -156,10 +206,28 @@
 									>
 								</h5>
 								<p class="card-text">List of Archived records.</p>
-								<a href="../users-ui/users-records-mangement.html" class="card-link">View Archives</a>
+								<a href="../admin-ui/admin-archive-mng.html" class="card-link">View Archives</a>
 							</div>
 						</div>
 					</div>
+					<div class="container-lg">
+						<div class="card text-center my-2 border-0 custom-card-2">
+							<div class="card-header">Analytics</div>
+							<div class="card-body">
+								<div class="d-flex justify-content-center p-0 w-100">
+									<canvas id="myChart" height="60px"></canvas>
+								</div>
+							</div>
+							<div class="card-footer text-body-secondary">
+								Number of students
+							</div>
+						</div>
+					</div>
+					<!-- <div class="container-fluid">
+						<div class="chart-container">
+							<canvas id="chart1" width="400" height="100" aria-label="Hello ARIA World" role="img"></canvas></canvas>
+						</div>
+					</div> -->
 					<div class="container-lg d-flex justify-content-center grid gap-3">
 						<div
 							class="card text-center p-0 mx-2 mb-2 custom-card-2 border-0"
@@ -175,7 +243,7 @@
 									laboriosam nobis dicta exercitationem deserunt quod
 									repudiandae.
 								</p>
-								<a href="../users-ui/calendar.html" class="btn btn-primary"
+								<a href="../admin-ui/admin-calendar.html" class="btn btn-primary"
 									>View Calendar</a
 								>
 							</div>
@@ -183,7 +251,7 @@
 						</div>
 						<div
 							class="card my-1 text-center p-0 border-0 mb-2 custom-card-2"
-							style="max-width: 27rem"
+							style="max-width: 18rem"
 						>
 							<div class="card-header">Announcement</div>
 							<div class="card-body text-primary">

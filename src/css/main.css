@@ -161,6 +161,15 @@ a.sidebar-link {
   margin: 0px;
 }
 
+.icon-delete {
+  visibility: hidden;
+  background-color: transparent;
+}
+
+li:hover .icon-delete {
+  visibility: visible;
+}
+
 /* Responsive */
 @media (min-width: 768px) {
   .content {
